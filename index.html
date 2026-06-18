@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deepfakes e Cidadania Digital</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DEEPFAKES</div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">O que são?</a>
+        <a href="#funcionam">Como funcionam</a>
+        <a href="#riscos">Riscos</a>
+        <a href="#identificar">Identificar</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+</header>
+
+<section id="inicio" class="hero">
+    <h1>Deepfakes: Você consegue identificar a verdade?</h1>
+
+    <p>
+        Em um mundo onde a Inteligência Artificial pode criar rostos,
+        vozes e vídeos falsos, saber diferenciar realidade de manipulação
+        tornou-se uma habilidade essencial da cidadania digital.
+    </p>
+
+    <button onclick="scrollToSection('sobre')">
+        Explorar
+    </button>
+</section>
+
+<section id="sobre" class="reveal">
+    <h2>O que são Deepfakes?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Vídeos Falsos</h3>
+            <p>
+                Deepfakes podem criar vídeos extremamente realistas
+                mostrando pessoas dizendo ou fazendo coisas que nunca fizeram.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Áudios Falsos</h3>
+            <p>
+                A IA consegue copiar vozes humanas com precisão impressionante.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Imagens Alteradas</h3>
+            <p>
+                Fotos podem ser modificadas para parecerem verdadeiras.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="funcionam" class="reveal">
+    <h2>Como Funcionam?</h2>
+
+    <div class="timeline">
+
+        <div class="step">
+            <span>1</span>
+            <h3>Coleta de Dados</h3>
+            <p>Milhares de imagens e vídeos são coletados.</p>
+        </div>
+
+        <div class="step">
+            <span>2</span>
+            <h3>Treinamento da IA</h3>
+            <p>A IA aprende expressões, voz e movimentos.</p>
+        </div>
+
+        <div class="step">
+            <span>3</span>
+            <h3>Geração</h3>
+            <p>O sistema cria conteúdo falso realista.</p>
+        </div>
+
+        <div class="step">
+            <span>4</span>
+            <h3>Resultado Final</h3>
+            <p>Vídeo ou áudio difícil de diferenciar do real.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="reveal">
+    <h2>Casos Reais</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Celebridades</h3>
+            <p>
+                Rostos de artistas já foram utilizados sem autorização.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Política</h3>
+            <p>
+                Vídeos falsos podem espalhar desinformação.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Empresas</h3>
+            <p>
+                Golpistas usam vozes falsas para aplicar fraudes.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="riscos" class="reveal">
+    <h2>Riscos para a Sociedade</h2>
+
+    <div class="cards">
+
+        <div class="card">Fake News</div>
+        <div class="card">Golpes Financeiros</div>
+        <div class="card">Manipulação Política</div>
+        <div class="card">Cyberbullying</div>
+
+    </div>
+</section>
+
+<section id="identificar" class="reveal">
+    <h2>Como Identificar um Deepfake?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            Movimentos faciais estranhos.
+        </div>
+
+        <div class="card">
+            Áudio fora de sincronização.
+        </div>
+
+        <div class="card">
+            Qualidade inconsistente.
+        </div>
+
+        <div class="card">
+            Fonte duvidosa.
+        </div>
+
+    </div>
+</section>
+
+<section id="estatisticas" class="reveal">
+    <h2>Estatísticas</h2>
+
+    <div class="stats">
+
+        <div>
+            <h3 id="c1">0</h3>
+            <p>Alunos Impactados</p>
+        </div>
+
+        <div>
+            <h3 id="c2">0</h3>
+            <p>Casos Reportados</p>
+        </div>
+
+        <div>
+            <h3 id="c3">0</h3>
+            <p>Conteúdos Compartilhados</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="quiz" class="reveal">
+    <h2>Quiz</h2>
+
+    <div class="quiz">
+
+        <p>1. Deepfakes utilizam IA?</p>
+        <button onclick="responder(true)">Sim</button>
+        <button onclick="responder(false)">Não</button>
+
+        <p id="resultadoQuiz"></p>
+
+    </div>
+</section>
+
+<section class="reveal">
+    <h2>Dicas de Segurança</h2>
+
+    <ul>
+        <li>Verifique a fonte.</li>
+        <li>Confirme em mais de um site.</li>
+        <li>Não compartilhe imediatamente.</li>
+        <li>Observe detalhes do vídeo.</li>
+        <li>Utilize verificadores de fatos.</li>
+    </ul>
+</section>
+
+<section id="faq" class="reveal">
+
+    <h2>Perguntas Frequentes</h2>
+
+    <div class="faq-item">
+        <button class="faq-btn">
+            O que é um deepfake?
+        </button>
+
+        <div class="faq-content">
+            Conteúdo criado por IA para imitar pessoas.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-btn">
+            É ilegal?
+        </button>
+
+        <div class="faq-content">
+            Depende do uso e da legislação local.
+        </div>
+    </div>
+
+</section>
+
+<section class="reveal">
+    <h2>Conclusão</h2>
+
+    <p>
+        A cidadania digital exige responsabilidade.
+        Saber identificar deepfakes ajuda a combater
+        a desinformação e proteger a sociedade.
+    </p>
+</section>
+
+<section class="reveal">
+    <h2>Equipe</h2>
+
+    <ul>
+        <li>Nome 1</li>
+        <li>Nome 2</li>
+        <li>Nome 3</li>
+        <li>Nome 4</li>
+        <li>Nome 5</li>
+    </ul>
+</section>
+
+<button id="topBtn">
+↑
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
